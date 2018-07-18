@@ -5,7 +5,11 @@ class Header extends Component {
   render() {
     return (
     <div style={styles.headerContainer}>
-      <div style={styles.title}>React App</div>
+      <div style={styles.title}>
+      Simple <span style={styles.displayColor}>React </span>
+      App with <span style={styles.displayColor}>Button's </span>
+      funtionality.
+      </div>
     </div>
     );
   }
@@ -26,6 +30,10 @@ const styles = {
 	    fontWeight: 'bold',
 	    fontSize: '18px',
 	    textAlign: 'center'
+	},
+
+	displayColor: {
+		color: 'orange'
 	}
 }
 
